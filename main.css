@@ -1,0 +1,43 @@
+#divBody {
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+
+/* ------------- NEW -------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    touch-action: none;
+    background-color: transparent;
+    overflow: hidden;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.btn-bg .item-top {
+    opacity: 0;
+}
+
+.btn-bg:hover .item-background {
+    opacity: 0;
+}
+
+.btn-bg:hover .item-top {
+    opacity: 1;
+}
+
+.draggable-zone {
+    opacity: 0.001;
+}
+
+.draggable-zone:focus { 
+    outline:none !important;
+}
+
+.btn-pointer {
+    cursor: pointer;
+}

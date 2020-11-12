@@ -1,0 +1,50 @@
+/*#divBody {
+    -webkit-user-select:none;
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -ms-user-select: none; 
+}*/
+
+/* ------------- NEW -------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*body {
+    touch-action: none;
+    background-color: transparent;
+    overflow: hidden;
+    -webkit-tap-highlight-color:red;
+}*/
+
+.btn-bg .item-top {
+    opacity: 0;
+}
+
+.btn-bg:hover .item-background {
+    opacity: 0;
+}
+
+.btn-bg:hover .item-top {
+    opacity: 1;
+}
+
+.draggable-zone {
+    opacity: 0.001;
+}
+
+.draggable-zone:focus { 
+    outline:none !important;
+}
+
+.btn-pointer {
+    cursor: pointer;
+}
+.text-label text{
+    font-size: 20px;
+    font-weight: bold;
+}
+#btn-01-inactive-text{
+    background-color: #111;
+}

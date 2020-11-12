@@ -1,0 +1,584 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cube Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+         <div id="divBody" style="position: relative; left: 0px; top: 0px;">
+        <svg id="svg_root" opacity="0" width="1024" height="648" viewBox="0 0 1024 648" id="rootSVG" xmlns="http://www.w3.org/2000/svg" style="left: 0px;">
+
+            <g id="svg">
+            </g>
+
+            
+            <g id="btn-group-select" transform="matrix(1,0,0,1,784,138.4)">
+              <path d="M 0 0 L 200 0 L 200 40 L 0 40 z" fill="white"></path>
+
+              <g id="btn-group-bg">
+                <g id="btn-01-inactive" class="btn-pointer btn-inactive" >
+              
+                  <g>
+                    <path d="M 0 0 L 200 0 L 200 40 L 0 40 z" fill="white"></path>
+    
+                    <g id="btn-01-inactive-text">
+                     
+                      <path d="M68.9,27.69V27c1.58,0,1.84-.52,1.84-2.74V16.45c0-2.2-.26-2.74-1.84-2.74v-.66h4.34c2.48,0,7-.14,7,3.38C80.26,19,78.1,19.67,76,20V20c2.22.06,5.1,1.08,5.1,3.7,0,3.1-3.32,4-5.82,4Zm5-8.06c2.18,0,4.26-.42,4.26-3.06,0-2.08-1.8-2.86-3.62-2.86-1.56,0-1.8.68-1.8,2.06v3.86ZM72.72,25c0,1.4.34,2,1.9,2,2.16,0,4.16-.76,4.16-3.22,0-3-2.48-3.52-5-3.52h-1.1Z"/>
+                      <path d="M83,27.69V27c1.61,0,1.89-.52,1.89-2.74V16.45c0-2.2-.28-2.74-1.89-2.74v-.66h5.49a8.29,8.29,0,0,1,5.3,1.44,6.64,6.64,0,0,1,2.68,5.66c0,4.88-3.3,7.54-8,7.54Zm3.87-3.38c0,2.14.3,2.72,1.94,2.72,4,0,5.36-3.22,5.36-6.8s-1.28-6.52-5.36-6.52c-1.72,0-1.94.44-1.94,2.54Z"/>
+                      <path d="M107.2,23h-.58c0-2.56-1.7-2.58-3.28-2.58h-.82V25c0,1.62.22,2,2,2,3.26,0,3.84-.82,5.84-3.34l.48.2-1.48,3.8H98.67V27c1.58,0,1.87-.52,1.87-2.74V16.45c0-2.2-.29-2.74-1.87-2.74v-.66h10.47l1.4,3.42-.5.3c-1.76-2.34-2.42-3.06-5.36-3.06-2,0-2.16.32-2.16,2.28v3.74h.82c1.88,0,3.16-.34,3.3-2.5h.56Z"/>
+                    
+                    </g>
+                  </g>
+                </g>
+
+                <g id="btn-02-inactive" class="btn-pointer btn-inactive" transform="matrix(1,0,0,1,1.5,42.75)">    
+                  <defs>
+                    <style>
+                      #btn-02-inactive .cls-1 {
+                        fill: red;
+                      }
+                    </style>
+                  </defs>
+                  <g>
+                    <path d="M 0 0 L 200 0 L 200 40 L 0 40 z" fill="white"></path>
+                    <rect class="cls-1" width="199.91" height="41.25"/>
+                    <g id="btn-02-inactive-text">
+                      <path d="M69.17,28.44v-.66c1.58,0,1.84-.52,1.84-2.74V17.2c0-2.2-.26-2.74-1.84-2.74V13.8h4.34c2.48,0,7-.14,7,3.38,0,2.54-2.14,3.24-4.26,3.54v.06c2.22.06,5.1,1.08,5.1,3.7,0,3.1-3.32,4-5.82,4Zm5-8.06c2.18,0,4.26-.42,4.26-3.06,0-2.08-1.8-2.86-3.62-2.86-1.56,0-1.8.68-1.8,2.06v3.86ZM73,25.78c0,1.4.34,2,1.9,2,2.16,0,4.16-.76,4.16-3.22,0-3-2.48-3.52-5-3.52H73Z"/>
+                      <path d="M91.79,23.72h-.58c0-2.56-1.7-2.58-3.28-2.58h-.82v4.62c0,1.62.22,2,2,2,3.26,0,3.84-.82,5.84-3.34l.48.2L94,28.44H83.27v-.66c1.58,0,1.86-.52,1.86-2.74V17.2c0-2.2-.28-2.74-1.86-2.74V13.8H93.73l1.4,3.42-.5.3c-1.76-2.34-2.42-3.06-5.36-3.06-2,0-2.16.32-2.16,2.28v3.74h.82c1.88,0,3.16-.34,3.3-2.5h.56Z"/>
+                      <path d="M109.13,17.24l-.58.26c-1-1.6-2.52-3.26-4.58-3.26-3.48,0-4.5,4.64-4.5,7.4S100.91,28,104.11,28c2.28,0,2.92-1.46,2.92-3.52,0-1.74-.58-1.92-2.22-1.92V21.9h5.7v.66c-1.72.06-1.72,1.1-1.72,2.56v3a2.85,2.85,0,0,0-.84-.16c-1.36,0-2.58.74-4.26.74-4.2,0-6.52-3.26-6.52-7.2,0-3.66,2.3-7.88,6.4-7.88,1.12,0,2,.36,2.7.36a3.14,3.14,0,0,0,1.52-.46Z"/>
+                   
+                    </g>
+                  </g>
+                </g>
+                
+                <g id="btn-03-inactive"  class="btn-pointer btn-inactive" transform="matrix(1,0,0,1,1.5,84)">
+                  <defs>
+                    <style>
+                      #btn-03-inactive .cls-1 {
+                        fill: red;
+                      }
+                    </style>
+                  </defs>
+                  <g>
+                    <path d="M 0 0 L 200 0 L 200 40 L 0 40 z" fill="white"></path>
+                    <rect class="cls-1" width="199.91" height="41.25"/>
+                    <g id="btn-03-inactive-text">
+                    
+                      <path d="M68.2,29.19v-.66c1.58,0,1.84-.52,1.84-2.74V18c0-2.2-.26-2.74-1.84-2.74v-.66h4.34c2.48,0,7-.14,7,3.38,0,2.54-2.14,3.24-4.26,3.54v.06c2.22.06,5.1,1.08,5.1,3.7,0,3.1-3.32,4-5.82,4Zm5-8.06c2.18,0,4.26-.42,4.26-3.06,0-2.08-1.8-2.86-3.62-2.86-1.56,0-1.8.68-1.8,2.06v3.86ZM72,26.53c0,1.4.34,2,1.9,2,2.16,0,4.16-.76,4.16-3.22,0-3-2.48-3.52-5-3.52H72Z"/>
+                      <path d="M94.6,18l-.58.26C93,16.65,91.5,15,89.44,15c-3.48,0-4.5,4.64-4.5,7.4s1.44,6.36,4.64,6.36c2.28,0,2.92-1.46,2.92-3.52,0-1.74-.58-1.92-2.22-1.92v-.66H96v.66c-1.72.06-1.72,1.1-1.72,2.56v3a2.85,2.85,0,0,0-.84-.16c-1.36,0-2.58.74-4.26.74-4.2,0-6.52-3.26-6.52-7.2,0-3.66,2.3-7.88,6.4-7.88,1.12,0,2,.36,2.7.36a3.14,3.14,0,0,0,1.52-.46Z"/>
+                      <path d="M97.42,29.19v-.66c1.6,0,1.88-.52,1.88-2.74V18c0-2.2-.28-2.74-1.88-2.74v-.66h5.48A8.29,8.29,0,0,1,108.2,16a6.64,6.64,0,0,1,2.68,5.66c0,4.88-3.3,7.54-8,7.54Zm3.86-3.38c0,2.14.3,2.72,1.94,2.72,4,0,5.36-3.22,5.36-6.8s-1.28-6.52-5.36-6.52c-1.72,0-1.94.44-1.94,2.54Z"/>
+                   
+                    </g>
+                  </g>
+                </g>
+
+                <g id="btn-04-inactive" class="btn-pointer btn-inactive" transform="matrix(1,0,0,1,1.5,124.25)">
+                  <defs>
+                    <style>
+                      #btn-04-inactive .cls-1 {
+                        fill: #111;
+                      }
+                    </style>
+                  </defs>
+                  <g>
+                    <path d="M 0 0 L 200 0 L 200 40 L 0 40 z" fill="white"></path>
+                    <path class="cls-1" d="M0,0H199.91a0,0,0,0,1,0,0V31.25a10,10,0,0,1-10,10H10a10,10,0,0,1-10-10V0A0,0,0,0,1,0,0Z"/>
+                    <g id="btn-04-inactive-text">
+                      <path d="M68.45,29.94v-.66c1.6,0,1.88-.52,1.88-2.74V18.7c0-2.2-.28-2.74-1.88-2.74V15.3h5.48a8.29,8.29,0,0,1,5.3,1.44,6.64,6.64,0,0,1,2.68,5.66c0,4.88-3.3,7.54-8,7.54Zm3.86-3.38c0,2.14.3,2.72,1.94,2.72,4,0,5.36-3.22,5.36-6.8S78.33,16,74.25,16c-1.72,0-1.94.44-1.94,2.54Z"/>
+                      <path d="M92.67,25.22h-.58c0-2.56-1.7-2.58-3.28-2.58H88v4.62c0,1.62.22,2,2,2,3.26,0,3.84-.82,5.84-3.34l.48.2-1.48,3.8H84.15v-.66c1.58,0,1.86-.52,1.86-2.74V18.7c0-2.2-.28-2.74-1.86-2.74V15.3H94.61L96,18.72l-.5.3C93.75,16.68,93.09,16,90.15,16c-2,0-2.16.32-2.16,2.28V22h.82c1.88,0,3.16-.34,3.3-2.5h.56Z"/>
+                      <path d="M110,18.74l-.58.26c-1-1.6-2.52-3.26-4.58-3.26-3.48,0-4.5,4.64-4.5,7.4s1.44,6.36,4.64,6.36c2.28,0,2.92-1.46,2.92-3.52,0-1.74-.58-1.92-2.22-1.92V23.4h5.7v.66c-1.72.06-1.72,1.1-1.72,2.56v3a2.85,2.85,0,0,0-.84-.16c-1.36,0-2.58.74-4.26.74-4.2,0-6.52-3.26-6.52-7.2,0-3.66,2.3-7.88,6.4-7.88,1.12,0,2,.36,2.7.36a3.14,3.14,0,0,0,1.52-.46Z"/>
+                     
+                    </g>
+                  </g>
+                </g>
+
+                <g id="btn-bg">
+                  <defs>
+                    <style>
+                      #btn-group-bg .cls-1 {
+                        fill: none;
+                        stroke: blue;
+                        stroke-miterlimit: 10;
+                        stroke-width: 3px;
+                      }
+                    </style>
+                  </defs>
+                  <g>
+                    <rect class="cls-1" x="1.5" y="1.5" width="200" height="165" rx="10" ry="10"/>
+                  </g>
+                </g>
+              </g>
+
+              <g id="btn-group-top">
+                <g id="btn-01-active" class="btn-pointer btn-active" transform="matrix(1,0,0,1,1.5,1.5)">
+                  <defs>
+                    <style>
+                      #btn-01-active .cls-1 {
+                        fill: blue;
+                      }
+                
+                      #btn-01-active .cls-2 {
+                        fill: #fff;
+                      }
+                    </style>
+                  </defs>
+                  <g>
+                    <path class="cls-1" d="M0,0H199.91a0,0,0,0,1,0,0V31.25a10,10,0,0,1-10,10H10a10,10,0,0,1-10-10V0A0,0,0,0,1,0,0Z" transform="translate(199.91 41.25) rotate(-180)"/>
+                    <g id="btn-01-active-text">
+                       <path d="M68.9,27.69V27c1.58,0,1.84-.52,1.84-2.74V16.45c0-2.2-.26-2.74-1.84-2.74v-.66h4.34c2.48,0,7-.14,7,3.38C80.26,19,78.1,19.67,76,20V20c2.22.06,5.1,1.08,5.1,3.7,0,3.1-3.32,4-5.82,4Zm5-8.06c2.18,0,4.26-.42,4.26-3.06,0-2.08-1.8-2.86-3.62-2.86-1.56,0-1.8.68-1.8,2.06v3.86ZM72.72,25c0,1.4.34,2,1.9,2,2.16,0,4.16-.76,4.16-3.22,0-3-2.48-3.52-5-3.52h-1.1Z"/>
+                      <path d="M83,27.69V27c1.61,0,1.89-.52,1.89-2.74V16.45c0-2.2-.28-2.74-1.89-2.74v-.66h5.49a8.29,8.29,0,0,1,5.3,1.44,6.64,6.64,0,0,1,2.68,5.66c0,4.88-3.3,7.54-8,7.54Zm3.87-3.38c0,2.14.3,2.72,1.94,2.72,4,0,5.36-3.22,5.36-6.8s-1.28-6.52-5.36-6.52c-1.72,0-1.94.44-1.94,2.54Z"/>
+                      <path d="M107.2,23h-.58c0-2.56-1.7-2.58-3.28-2.58h-.82V25c0,1.62.22,2,2,2,3.26,0,3.84-.82,5.84-3.34l.48.2-1.48,3.8H98.67V27c1.58,0,1.87-.52,1.87-2.74V16.45c0-2.2-.29-2.74-1.87-2.74v-.66h10.47l1.4,3.42-.5.3c-1.76-2.34-2.42-3.06-5.36-3.06-2,0-2.16.32-2.16,2.28v3.74h.82c1.88,0,3.16-.34,3.3-2.5h.56Z"/>
+                   
+                    </g>
+                  </g>
+                </g>
+
+                <g id="btn-02-active" class="btn-pointer btn-active" transform="matrix(1,0,0,1,1.5,42.75)">
+                  <defs>
+                    <style>
+                      #btn-02-active .cls-1 {
+                        fill: blue;
+                      }
+                
+                      #btn-02-active .cls-2 {
+                        fill: #fff;
+                      }
+                    </style>
+                  </defs>
+                  <g>
+                    <rect class="cls-1" width="199.91" height="41.25"/>
+                    <g id="btn-02-active-text">
+                       <path d="M69.17,28.44v-.66c1.58,0,1.84-.52,1.84-2.74V17.2c0-2.2-.26-2.74-1.84-2.74V13.8h4.34c2.48,0,7-.14,7,3.38,0,2.54-2.14,3.24-4.26,3.54v.06c2.22.06,5.1,1.08,5.1,3.7,0,3.1-3.32,4-5.82,4Zm5-8.06c2.18,0,4.26-.42,4.26-3.06,0-2.08-1.8-2.86-3.62-2.86-1.56,0-1.8.68-1.8,2.06v3.86ZM73,25.78c0,1.4.34,2,1.9,2,2.16,0,4.16-.76,4.16-3.22,0-3-2.48-3.52-5-3.52H73Z"/>
+                      <path d="M91.79,23.72h-.58c0-2.56-1.7-2.58-3.28-2.58h-.82v4.62c0,1.62.22,2,2,2,3.26,0,3.84-.82,5.84-3.34l.48.2L94,28.44H83.27v-.66c1.58,0,1.86-.52,1.86-2.74V17.2c0-2.2-.28-2.74-1.86-2.74V13.8H93.73l1.4,3.42-.5.3c-1.76-2.34-2.42-3.06-5.36-3.06-2,0-2.16.32-2.16,2.28v3.74h.82c1.88,0,3.16-.34,3.3-2.5h.56Z"/>
+                      <path d="M109.13,17.24l-.58.26c-1-1.6-2.52-3.26-4.58-3.26-3.48,0-4.5,4.64-4.5,7.4S100.91,28,104.11,28c2.28,0,2.92-1.46,2.92-3.52,0-1.74-.58-1.92-2.22-1.92V21.9h5.7v.66c-1.72.06-1.72,1.1-1.72,2.56v3a2.85,2.85,0,0,0-.84-.16c-1.36,0-2.58.74-4.26.74-4.2,0-6.52-3.26-6.52-7.2,0-3.66,2.3-7.88,6.4-7.88,1.12,0,2,.36,2.7.36a3.14,3.14,0,0,0,1.52-.46Z"/>
+                    </g>
+                  </g>
+                </g>
+
+                <g id="btn-03-active" class="btn-pointer btn-active" transform="matrix(1,0,0,1,1.5,84)">
+                  <defs>
+                    <style>
+                      #btn-03-active .cls-1 {
+                        fill: blue;
+                      }
+                
+                      #btn-03-active .cls-2 {
+                        fill: #fff;
+                      }
+                    </style>
+                  </defs>
+                  <g>
+                    <rect class="cls-1" width="199.91" height="41.25"/>
+                    <g id="btn-03-active-text">
+                     <path d="M68.2,29.19v-.66c1.58,0,1.84-.52,1.84-2.74V18c0-2.2-.26-2.74-1.84-2.74v-.66h4.34c2.48,0,7-.14,7,3.38,0,2.54-2.14,3.24-4.26,3.54v.06c2.22.06,5.1,1.08,5.1,3.7,0,3.1-3.32,4-5.82,4Zm5-8.06c2.18,0,4.26-.42,4.26-3.06,0-2.08-1.8-2.86-3.62-2.86-1.56,0-1.8.68-1.8,2.06v3.86ZM72,26.53c0,1.4.34,2,1.9,2,2.16,0,4.16-.76,4.16-3.22,0-3-2.48-3.52-5-3.52H72Z"/>
+                      <path d="M94.6,18l-.58.26C93,16.65,91.5,15,89.44,15c-3.48,0-4.5,4.64-4.5,7.4s1.44,6.36,4.64,6.36c2.28,0,2.92-1.46,2.92-3.52,0-1.74-.58-1.92-2.22-1.92v-.66H96v.66c-1.72.06-1.72,1.1-1.72,2.56v3a2.85,2.85,0,0,0-.84-.16c-1.36,0-2.58.74-4.26.74-4.2,0-6.52-3.26-6.52-7.2,0-3.66,2.3-7.88,6.4-7.88,1.12,0,2,.36,2.7.36a3.14,3.14,0,0,0,1.52-.46Z"/>
+                      <path d="M97.42,29.19v-.66c1.6,0,1.88-.52,1.88-2.74V18c0-2.2-.28-2.74-1.88-2.74v-.66h5.48A8.29,8.29,0,0,1,108.2,16a6.64,6.64,0,0,1,2.68,5.66c0,4.88-3.3,7.54-8,7.54Zm3.86-3.38c0,2.14.3,2.72,1.94,2.72,4,0,5.36-3.22,5.36-6.8s-1.28-6.52-5.36-6.52c-1.72,0-1.94.44-1.94,2.54Z"/>
+                    </g>
+                  </g>
+                </g>
+
+                <g id="btn-04-active" class="btn-pointer btn-active" transform="matrix(1,0,0,1,1.5,124.25)">
+                  <defs>
+                    <style>
+                      #btn-04-active .cls-1 {
+                        fill: blue;
+                      }
+                
+                      #btn-04-active .cls-2 {
+                        fill: #fff;
+                      }
+                    </style>
+                  </defs>
+                  <g>
+                    <path class="cls-1" d="M0,0H199.91a0,0,0,0,1,0,0V31.25a10,10,0,0,1-10,10H10a10,10,0,0,1-10-10V0A0,0,0,0,1,0,0Z"/>
+                    <g id="btn-04-active-text">
+                      <path d="M68.45,29.94v-.66c1.6,0,1.88-.52,1.88-2.74V18.7c0-2.2-.28-2.74-1.88-2.74V15.3h5.48a8.29,8.29,0,0,1,5.3,1.44,6.64,6.64,0,0,1,2.68,5.66c0,4.88-3.3,7.54-8,7.54Zm3.86-3.38c0,2.14.3,2.72,1.94,2.72,4,0,5.36-3.22,5.36-6.8S78.33,16,74.25,16c-1.72,0-1.94.44-1.94,2.54Z"/>
+                      <path d="M92.67,25.22h-.58c0-2.56-1.7-2.58-3.28-2.58H88v4.62c0,1.62.22,2,2,2,3.26,0,3.84-.82,5.84-3.34l.48.2-1.48,3.8H84.15v-.66c1.58,0,1.86-.52,1.86-2.74V18.7c0-2.2-.28-2.74-1.86-2.74V15.3H94.61L96,18.72l-.5.3C93.75,16.68,93.09,16,90.15,16c-2,0-2.16.32-2.16,2.28V22h.82c1.88,0,3.16-.34,3.3-2.5h.56Z"/>
+                      <path d="M110,18.74l-.58.26c-1-1.6-2.52-3.26-4.58-3.26-3.48,0-4.5,4.64-4.5,7.4s1.44,6.36,4.64,6.36c2.28,0,2.92-1.46,2.92-3.52,0-1.74-.58-1.92-2.22-1.92V23.4h5.7v.66c-1.72.06-1.72,1.1-1.72,2.56v3a2.85,2.85,0,0,0-.84-.16c-1.36,0-2.58.74-4.26.74-4.2,0-6.52-3.26-6.52-7.2,0-3.66,2.3-7.88,6.4-7.88,1.12,0,2,.36,2.7.36a3.14,3.14,0,0,0,1.52-.46Z"/>
+                    </g>
+                  </g>
+                </g>
+
+              </g>
+
+              <g id="btn-group-separate">
+                <g id="separate-1" class="btn-separate" transform="matrix(1, 0, 0, 1, 0, 42.75)">
+                  <path d="M -1 0 L 204 0" stroke="white" stroke-width="3px"></path>
+                </g>
+
+                <g id="separate-2" class="btn-separate" transform="matrix(1, 0, 0, 1, 0, 84)">
+                  <path d="M -1 0 L 204 0" stroke="white" stroke-width="3px"></path>
+                </g>
+
+                <g id="separate-3" class="btn-separate" transform="matrix(1, 0, 0, 1, 0, 125.25)">
+                  <path d="M -1 0 L 204 0" stroke="white" stroke-width="3px"></path>
+                </g>
+              </g>
+            </g>
+
+
+            <!-- LABEL GROUP -->
+            <g id="group-label-0">
+              <g id="label-A" class="text-label">
+              
+               <text>A</text>
+              </g>
+
+              <g id="label-B" class="text-label">
+                  <text>B</text>
+              </g>
+
+              <g id="label-C" class="text-label">
+           
+                  <text>C</text>
+              </g>
+
+              <g id="label-D" class="text-label">
+              
+                 <text>D</text>
+              </g>
+
+              <g id="label-E" class="text-label">
+                
+                 <text>E</text>
+              </g>
+
+              <g id="label-F" class="text-label">
+               
+                 <text>F</text>
+              </g>
+
+              <g id="label-G" class="text-label" >
+             
+               <text>G</text>
+              </g>
+
+              <g id="label-H" class="text-label">
+              
+                <text>H</text>
+              </g>
+            </g>
+
+            <g id="group-label-1">
+              <g id="label-1-A" class="text-label">
+                <!--   <text>A</text> -->
+                <text>A</text>
+              </g>
+
+              <g id="label-1-B" class="text-label">
+                 <text>B</text>
+              </g>
+
+              <g id="label-1-C" class="text-label">
+                  <text>C</text>
+              </g>
+
+              <g id="label-1-D" class="text-label">
+                <text>D</text>
+              </g>
+
+              <g id="label-1-E" class="text-label">
+                 <text>E</text>
+              </g>
+
+              <g id="label-1-F" class="text-label">
+                <text>F</text>
+              </g>
+
+              <g id="label-1-G" class="text-label">
+                <text>G</text>
+              </g>
+
+              <g id="label-1-H" class="text-label">
+               <text>H</text>
+              </g>
+            </g>
+
+            <g id="group-label-2">
+              <g id="label-2-A" class="text-label">
+                  <text>A</text>
+              </g>
+
+              <g id="label-2-B" class="text-label">
+                <text>B</text>
+              </g>
+
+              <g id="label-2-C" class="text-label">
+                  <text>C</text>
+              </g>
+
+              <g id="label-2-D" class="text-label">
+                  <text>D</text>
+              </g>
+
+              <g id="label-2-E" class="text-label">
+                 <text>E</text>
+              </g>
+
+              <g id="label-2-F" class="text-label">
+                <text>F</text>
+              </g>
+
+              <g id="label-2-G" class="text-label">
+                <text>G</text>
+              </g>
+
+              <g id="label-2-H" class="text-label">
+               <text>H</text>
+              </g>
+            </g>
+
+            <g id="group-label-3">
+              <g id="label-3-A" class="text-label">
+                  <text>A</text>
+              </g>
+
+              <g id="label-3-B" class="text-label">
+                <text>B</text>
+              </g>
+
+              <g id="label-3-C" class="text-label">
+                  <text>C</text>
+              </g>
+
+              <g id="label-3-D" class="text-label">
+                  <text>D</text>
+              </g>
+
+              <g id="label-3-E" class="text-label">
+                 <text>E</text>
+              </g>
+
+              <g id="label-3-F" class="text-label">
+                <text>F</text>
+              </g>
+
+              <g id="label-3-G" class="text-label">
+                <text>G</text>
+              </g>
+
+              <g id="label-3-H" class="text-label">
+               <text>H</text>
+              </g>
+            </g>
+
+            <g id="group-label-4">
+              <g id="label-4-A" class="text-label">
+                  <text>A</text>
+              </g>
+
+              <g id="label-4-B" class="text-label">
+                <text>B</text>
+              </g>
+
+              <g id="label-4-C" class="text-label">
+                  <text>C</text>
+              </g>
+
+              <g id="label-4-D" class="text-label">
+                  <text>D</text>
+              </g>
+
+              <g id="label-4-E" class="text-label">
+                 <text>E</text>
+              </g>
+
+              <g id="label-4-F" class="text-label">
+                <text>F</text>
+              </g>
+
+              <g id="label-4-G" class="text-label">
+                <text>G</text>
+              </g>
+
+              <g id="label-4-H" class="text-label">
+               <text>H</text>
+              </g>
+            </g>
+
+            <g class="draggable-zone" transform="matrix(1,0,0,1,145,34)">
+              <path d="M 0 0 L 640 0 L 640 450 L 0 450 z" />
+            </g>
+              <g id="btn-01-inactive" class="btn-pointer btn-inactive" >
+              
+                  <g>
+                    <path d="M 0 0 L 200 0 L 200 40 L 0 40 z" fill="white"></path>
+    
+                    <g id="btn-01-inactive-text">
+                     
+                     <button>ABC</button>
+                    
+                    </g>
+                  </g>
+                </g>
+
+                  <g id="btn-reload-bg">
+              <path class="cls-3" style="fill:#aaa" transform="matrix(1,0,0,1,839,564)" d="M131.18,47.7H13.91A13.91,13.91,0,0,1,0,33.79V17.89A13.91,13.91,0,0,1,13.91,4H131.18A13.91,13.91,0,0,1,145.1,17.89v15.9A13.92,13.92,0,0,1,131.18,47.7"/>
+            </g>
+            <g id="btn-reload-group">
+              <g id="btn-reload-active" class="btn-pointer" transform="matrix(1,0,0,1,839,564)">
+                <defs>
+                  <style>
+                    #btn-reload-active .cls-1 {
+                      fill: none;
+                    }
+              
+                    #btn-reload-active .cls-2 {
+                      clip-path: url(#clip-path-1);
+                    }
+              
+                    #btn-reload-active .cls-3 {
+                      fill: #aaa;
+                    }
+              
+                    #btn-reload-active .cls-4 {
+                      fill: green;
+                    }
+              
+                    #btn-reload-active .cls-5 {
+                      fill: blue;
+                    }
+                  </style>
+                  <clipPath id="clip-path-1">
+                    <rect class="cls-1" width="145.1" height="47.7"/>
+                  </clipPath>
+                </defs>
+                <g>
+                  <g class="cls-2">
+               
+                    <g>
+                      <path class="cls-5">
+                     
+                    </g>
+                    <g class="cls-2">
+                      <path class="cls-5" d="M24.84,31.8a8,8,0,0,1-7.95-7.95h3A5,5,0,1,0,25.69,19l.5-2.94A8,8,0,0,1,24.84,31.8Z"/>
+                      <polygon class="cls-5" points="26.51 22.41 19.19 16.34 28.11 13.03 26.51 22.41"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+  
+              <g id="btn-reload-down" class="btn-pointer" transform="matrix(1,0,0,1,839,564)">
+                <defs>
+                  <style>
+                    #btn-reload-down .cls-1 {
+                      fill: none;
+                    }
+              
+                    #btn-reload-down .cls-2 {
+                      clip-path: url(#clip-path);
+                    }
+              
+                    #btn-reload-down .cls-3 {
+                      fill: blue;
+                    }
+              
+                    #btn-reload-down .cls-4 {
+                      fill: #fff;
+                    }
+                  </style>
+                  <clipPath id="clip-path">
+                    <rect class="cls-1" width="146" height="44"/>
+                  </clipPath>
+                </defs>
+                <g class="cls-2">
+                  <g class="cls-2">
+                    <path class="cls-3" d="M132,44H14A14,14,0,0,1,0,30V14A14,14,0,0,1,14,0H132a14,14,0,0,1,14,14V30a14,14,0,0,1-14,14"/>
+                  </g>
+                  <g>
+              
+                  </g>
+                  <g class="cls-2">
+                    <path class="cls-4" d="M25,32a8,8,0,0,1-8-8h3a5,5,0,1,0,5.85-4.93l.5-3A8,8,0,0,1,25,32Z"/>
+                    <polygon class="cls-4" points="26.68 22.55 19.3 16.44 28.28 13.11 26.68 22.55"/>
+                  </g>
+                </g>
+              </g>
+  
+              <g id="btn-reload-disabled" transform="matrix(1,0,0,1,839,564)">
+                <defs>
+                  <style>
+                    #btn-reload-disabled .cls-1 {
+                      fill: none;
+                    }
+              
+                    #btn-reload-disabled .cls-2 {
+                      clip-path: url(#clip-path-2);
+                    }
+              
+                    #btn-reload-disabled .cls-3 {
+                      fill: #111;
+                    }
+              
+                    #btn-reload-disabled .cls-4 {
+                      fill: #f2f2f2;
+                    }
+              
+                    #btn-reload-disabled .cls-5 {
+                      fill: blue;
+                    }
+                  </style>
+                  <clipPath id="clip-path-2">
+                    <rect class="cls-1" width="145.1" height="47.7"/>
+                  </clipPath>
+                </defs>
+                <g>
+                  <g class="cls-2">
+                    <g class="cls-2">
+                      <rect class="cls-4" x="1.49" y="1.49" width="142.12" height="40.75" rx="12.42" ry="12.42"/>
+                      <path class="cls-5" d="M131.18,3a10.94,10.94,0,0,1,10.93,10.93v15.9a10.94,10.94,0,0,1-10.93,10.93H13.91A10.94,10.94,0,0,1,3,29.81V13.91A10.94,10.94,0,0,1,13.91,3H131.18m0-3H13.91A13.91,13.91,0,0,0,0,13.91v15.9A13.91,13.91,0,0,0,13.91,43.73H131.18A13.91,13.91,0,0,0,145.1,29.81V13.91A13.91,13.91,0,0,0,131.18,0"/>
+                    </g>
+                   
+                    <g class="cls-2">
+                      <path class="cls-5" d="M24.85,31.8a8,8,0,0,1-8-8h3A5,5,0,1,0,25.69,19l.5-2.94A8,8,0,0,1,24.85,31.8Z"/>
+                      <polygon class="cls-5" points="26.51 22.41 19.19 16.34 28.11 13.03 26.51 22.41"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+
+              <g class="btn-mouse-event-layer" class="btn-pointer" transform="matrix(1,0,0,1,839,564)">
+                <path opacity="0.001" d="M 0 0 L 146 0 L 146 48 L 0 48 z" fill="white"></path>
+              </g>
+            </g>
+
+           
+            
+        </svg>
+      </div>
+
+    
+    </div>        
+    </div>
+
+
+
+   
+     
+    
+    
+    <script src="js/jquery-2.x-git.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <script src="js/autoResize.js"></script>
+    <script src="js/utils.js"></script>
+
+    <script src="js/const.js"></script>
+    <script src="js/point3D.js"></script>
+    <script src="js/shape3D.js"></script>
+    <script src="js/mathLib.js"></script>
+    <script src="js/svgLib.js"></script>
+    <script src="js/draw.js"></script>
+</body>
+
+</html>
